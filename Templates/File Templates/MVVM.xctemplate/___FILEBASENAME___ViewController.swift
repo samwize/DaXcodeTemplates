@@ -10,30 +10,30 @@ import UIKit
 
 class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
-    var viewModel: ___VARIABLE_productName:identifier___ViewModel!
+    var viewModel: ___VARIABLE_productName:identifier___ViewModel
     
     init(viewModel: ___VARIABLE_productName:identifier___ViewModel) {
-        super.init(nibName: nil, bundle: nil)
         self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        fatalError("nah")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupViews()
-        bindViews()
+        setupView()
+        setupBinding()
     }
     
-    private func setupViews() {
-        addSubview(exampleLabel)
+    private func setupView() {
+        view.addSubview(exampleLabel)
         
         // Create auto layout constraints for the views
     }
     
-    private func bindViews() {
+    private func setupBinding() {
         exampleLabel.text = "Updated text"
     }
     

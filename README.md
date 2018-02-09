@@ -4,4 +4,11 @@ A repository of templates and code snippets to make development easier.
 
 ## Setup
 
-_todo_
+    git clone https://github.com/samwize/DaXcodeTemplates
+
+Assuming the project is cloned in ~/Workspace/DaXcodeTemplates, we need to create symbolic links to Xcode.
+
+    cd ~/Workspace/DaXcodeTemplates
+    ln -s ~/Workspace/DaXcodeTemplates/Templates ~/Library/Developer/Xcode/
+    ln -s ~/Workspace/DaXcodeTemplates/CodeSnippets ~/Library/Developer/Xcode/UserData/
+    

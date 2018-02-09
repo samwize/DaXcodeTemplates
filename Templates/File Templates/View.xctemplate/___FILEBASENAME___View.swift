@@ -12,14 +12,14 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupViews()
+        setupView()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("nah")
     }
     
-    private func setupViews() {
+    private func setupView() {
         translatesAutoresizingMaskIntoConstraints = false
         
         addSubview(exampleLabel)
