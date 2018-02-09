@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>animatewithconstraints</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[&lt;#containerView#&gt; layoutIfNeeded];
+                [UIView animateWithDuration:1.0 animations:^{
+    &lt;#someViewConstraint#&gt;.constant = &lt;#value#&gt;;
+    [&lt;#containerView#&gt; layoutIfNeeded];
+                }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>EF3B28E6-1BCF-456D-A43A-7BD7DDA6F394</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Animate with autolayout constraints</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

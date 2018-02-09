@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>NSManagedObjectContextObjectsDidChangeNotification</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    // Register notification for core data
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleDataModelChange:)
+                                                 name:NSManagedObjectContextObjectsDidChangeNotification
+                                               object:[NSManagedObjectContext defaultContext]];
+
+
+
+- (void)handleDataModelChange:(NSNotification *)notif {
+    DDLogInfo(@"&gt;&gt; Model Change: %@", notif);
+    NSSet *updatedObjects = [[notif userInfo] objectForKey:NSUpdatedObjectsKey];
+    NSSet *deletedObjects = [[notif userInfo] objectForKey:NSDeletedObjectsKey];
+    NSSet *insertedObjects = [[notif userInfo] objectForKey:NSInsertedObjectsKey];
+    
+    // Do something in response to this
+    // Then reload table view
+    [self.tableView reloadData];
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CB51158B-9A36-49F8-842F-A1C6EB0CB289</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Listen to changes to core data model</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>NSManagedObjectContextObjectsDidChangeNotification</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

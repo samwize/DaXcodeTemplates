@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>send-email</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#import &lt;MessageUI/MFMailComposeViewController.h&gt;
+
+// And it's  &lt;MFMailComposeViewControllerDelegate&gt;
+
+- (void)trySendEmailWithSubject:(NSString*)subject message:(NSString*)message isHTML:(BOOL)isHTML {
+    if ([MFMailComposeViewController canSendMail]) {
+        // Show the composer
+        MFMailComposeViewController *controller = [[MFMailComposeViewController alloc] init];
+        controller.mailComposeDelegate = self;
+        [controller setSubject:subject];
+        [controller setMessageBody:message isHTML:isHTML];
+        [self presentViewController:controller animated:YES completion:nil];
+    } else {
+        // Cannot send email
+        [[[UIAlertView alloc] initWithTitle:nil
+                                    message:@"Oops.. Your device is not setup for sending email."
+                                   delegate:self
+                          cancelButtonTitle:@"Okay"
+                          otherButtonTitles: nil] show];
+    }
+}
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller
+          didFinishWithResult:(MFMailComposeResult)result
+                        error:(NSError*)error;
+{
+    if (result == MFMailComposeResultSent) {
+        NSLog(@"It's sent!");
+    }
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6EBCABD6-BD5A-402F-8931-EEC4CC0FD397</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Send Email</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

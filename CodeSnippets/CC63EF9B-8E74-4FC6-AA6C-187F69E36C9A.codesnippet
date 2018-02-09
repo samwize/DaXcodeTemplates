@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>showToast</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// Configure toast. Hide first.
+// Also refer to storyboard on how to setup a toast. Need UILabel in a UIView, with constraints.
+// Refer to: PoosViewController storyboard setup
+- (void)initToast {
+    self.toastLabel.superview.alpha = 0;
+    self.toastLabel.superview.layer.cornerRadius = 10;
+    self.toastLabel.superview.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8];
+    self.toastLabel.textColor = [UIColor whiteColor];
+}
+
+// Show the toast for 3 seconds, with a half second fade in and out
+- (void)showToast {
+    self.toastLabel.superview.alpha = 0;
+    self.toastVerticalSpaceConstraint.constant = -20;
+    [self.view layoutIfNeeded];
+    [UIView setAnimationBeginsFromCurrentState:YES];
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        self.toastLabel.superview.alpha = 1;
+        self.toastVerticalSpaceConstraint.constant = 10;
+        [self.view layoutIfNeeded];
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.5 delay:3.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+            self.toastLabel.superview.alpha = 0;
+            self.toastVerticalSpaceConstraint.constant = -20;
+            [self.view layoutIfNeeded];
+        } completion:nil];
+    }];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CC63EF9B-8E74-4FC6-AA6C-187F69E36C9A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Using animation with constraints</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Custom toast with storyboard constraint setup</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
