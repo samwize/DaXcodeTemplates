@@ -22,19 +22,35 @@
 	<array>
 		<dict>
 			<key>Identifier</key>
-			<string>FOO</string>
+			<string>className</string>
 			<key>Required</key>
 			<true/>
 			<key>Name</key>
-			<string>Foo:</string>
+			<string>Class name:</string>
 			<key>Description</key>
-			<string>Just a foo variable</string>
+			<string>Create a class and an extension</string>
 			<key>Type</key>
 			<string>text</string>
 			<key>Default</key>
-			<string>ohMyFoo</string>
+			<string>MyClass</string>
 			<key>NotPersisted</key>
 			<true/>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_className:identifier___</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_className:identifier___Foo</string>
+			<key>Identifier</key>
+			<string>FOO</string>
+			<key>Type</key>
+			<string>static</string>
 		</dict>
 	</array>
 </dict>

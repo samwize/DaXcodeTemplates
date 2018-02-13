@@ -3,9 +3,13 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//___COPYRIGHT___
+//  ___COPYRIGHT___
 //
 
 import Foundation
 
-let ___VARIABLE_FOO___: Foo?
+class ___FILEBASENAMEASIDENTIFIER___ {
+    
+    var foo: ___VARIABLE_FOO___
+    
+}
