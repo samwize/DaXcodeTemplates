@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>viewdidload</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>override func viewDidLoad() {
+        super.viewDidLoad()
+        setupView()
+    }
+
+    private func setupView() {
+        view.addSubview(&lt;#subview#&gt;)
+        constrain(view, &lt;#subview#&gt;) { view, subview in
+            subview.left == view.left
+            subview.right == view.right
+            subview.top == view.top
+            subview.bottom == view.bottom
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3A4D3C5C-F927-406A-B4F0-3CDEE9E344DE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>viewDidLoad + setupView with Cartography constraints</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Setup viewDidLoad</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
