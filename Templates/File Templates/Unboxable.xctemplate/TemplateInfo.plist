@@ -22,17 +22,17 @@
 	<array>
 		<dict>
 			<key>Identifier</key>
-			<string>Struct</string>
+			<string>productName</string>
 			<key>Required</key>
 			<true/>
 			<key>Name</key>
-			<string>struct name:</string>
+			<string>Struct Name:</string>
 			<key>Description</key>
 			<string>The struct name</string>
 			<key>Type</key>
 			<string>text</string>
 			<key>Default</key>
-			<string></string>
+			<string>MyStruct</string>
 			<key>NotPersisted</key>
 			<true/>
 		</dict>
