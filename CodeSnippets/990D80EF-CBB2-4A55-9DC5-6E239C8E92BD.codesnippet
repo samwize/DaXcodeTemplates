@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>dispatchdelay</string>
+	<string>pvar</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(&lt;#delay#&gt; * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) {
-    &lt;#code#&gt;
-}</string>
+	<string>private var &lt;#declaration#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>2A01214A-AE57-4279-98D4-62DB5832F08C</string>
+	<string>990D80EF-CBB2-4A55-9DC5-6E239C8E92BD</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Declaration of private var</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>dispatch after delay (Swift)</string>
+	<string>Private var</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

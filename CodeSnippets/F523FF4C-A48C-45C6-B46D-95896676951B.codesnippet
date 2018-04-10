@@ -3,29 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>gcddispatchasync</string>
+	<string>con1</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-            code
-            dispatch_async(dispatch_get_main_queue(), ^{
-                &lt;#code#&gt;
-            });
-        });</string>
+	<string>view.addSubview(&lt;#subview#&gt;)
+        constrain(view, subview) { view, subview in
+            subview.left == view.left
+            subview.right == view.right
+            subview.top == view.top
+            subview.bottom == view.bottom
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>644C870C-8E14-4329-9F58-5A64C4D7D95B</string>
+	<string>F523FF4C-A48C-45C6-B46D-95896676951B</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Run in background thread, then run in main</string>
+	<string>Add 1 subview and setup constrain</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>GCD: Dispatch Async BG then Main</string>
+	<string>Constrain 1 subview</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

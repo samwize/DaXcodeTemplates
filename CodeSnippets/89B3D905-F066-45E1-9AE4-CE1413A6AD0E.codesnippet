@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>con2</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>view.addSubview(&lt;#subview1#&gt;)
+        view.addSubview(&lt;#subview2#&gt;)
+        constrain(view, subview1, subview2) { view, subview1, subview2 in
+            subview1.left == view.left
+            subview1.right == view.right
+            subview1.top == view.top
+            subview1.bottom == view.bottom
+            
+            subview2.edges == view.edges
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>89B3D905-F066-45E1-9AE4-CE1413A6AD0E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Add 2 subviews and setup constrains</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Constraint 2 subviews</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
