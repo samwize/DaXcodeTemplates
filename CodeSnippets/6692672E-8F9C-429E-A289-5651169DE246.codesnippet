@@ -3,27 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>con1</string>
+	<string>plet</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>view.addSubview(&lt;#subview#&gt;)
-        constrain(view, subview) { view, subview in
-            subview.left == view.left
-            subview.right == view.right
-            subview.top == view.top
-            subview.bottom == view.bottom
-        }</string>
+	<string>private let &lt;#declaration#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F523FF4C-A48C-45C6-B46D-95896676951B</string>
+	<string>6692672E-8F9C-429E-A289-5651169DE246</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>Add 1 subview and setup constrain</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Constrain 1 subview</string>
+	<string>Private let</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
