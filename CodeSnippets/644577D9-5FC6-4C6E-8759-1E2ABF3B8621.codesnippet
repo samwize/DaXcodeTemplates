@@ -3,21 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>dispatchdelay</string>
+	<string>weakself</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>DispatchQueue.main.asyncAfter(deadline: .now() + &lt;#delay in seconds#&gt;) { [weak self] in
-    &lt;#code#&gt;
-}</string>
+	<string>guard let weakSelf = self else { return }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>A5D99F0E-76A7-4142-BF07-67F91484D638</string>
+	<string>644577D9-5FC6-4C6E-8759-1E2ABF3B8621</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Dispatch on main after delay</string>
+	<string>Weak self</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
