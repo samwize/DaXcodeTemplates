@@ -1,2 +1,10 @@
 Pods
 xcuserdata/
+
+# fastlane
+fastlane/screenshots
+fastlane/metadata/app_icon.jpg
+fastlane/report.xml
+*.app.dSYM.zip
+*.ipa
+Preview.html

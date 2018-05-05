@@ -1,6 +1,6 @@
 # Xcode Templates
 
-A repository of templates and code snippets to make development easier.
+A repository of templates to kickstart development.
 
 ## Setup
 
@@ -13,3 +13,23 @@ Assuming the project is cloned in ~/Workspace/DaXcodeTemplates, we need to creat
     ln -s ~/Workspace/DaXcodeTemplates/CodeSnippets ~/Library/Developer/Xcode/UserData/
 
 If there is warning "File exists" during linking, you have to delete ~/Library/Developer/Xcode/Templates and ~/Library/Developer/Xcode/UserData/CodeSnippets first.
+
+## .gitignore
+
+The .gitignore includes standard Xcode files and fastlane.
+
+    cp .gitignore /your/project/
+
+## Fastfile
+
+A fastfile with common usage.
+
+    cp fastlane/Fastfile /your/project/fastlane/
+
+Usage:
+
+    # Build and upload to ITC
+    fastlane release
+
+    # Separately, update the metadata and screenshots
+    fastlane deliver_meta
