@@ -15,9 +15,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView {
         setupView()
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("nah")
-    }
+    required init?(coder aDecoder: NSCoder) { fatalError("nah") }
     
     private func setupView() {
         translatesAutoresizingMaskIntoConstraints = false
@@ -31,7 +29,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView {
     
     private lazy var exampleLabel: UILabel = {
         let label = UILabel()
-        label.text = LS("An example of a lazily created UILabel")
+        label.text = "An example of a lazily created UILabel"
         return label
     }()
     

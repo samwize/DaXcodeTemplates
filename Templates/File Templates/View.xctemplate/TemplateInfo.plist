@@ -32,7 +32,7 @@
 			<key>Type</key>
 			<string>text</string>
 			<key>Default</key>
-			<string>MyView</string>
+			<string>MyCustom</string>
 			<key>NotPersisted</key>
 			<true/>
 		</dict>

@@ -3,23 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ep=</string>
+	<string>disposebag</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>expect(&lt;#test value#&gt;) == &lt;#expected#&gt;
-</string>
+	<string>let disposeBag = DisposeBag()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>4EDF2343-C6B1-4909-BB00-600DFA1B3E87</string>
+	<string>910EA64C-B57F-4EA9-93B8-E248195C097B</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Create a dispose bag</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Expect</string>
+	<string>Dispose Bag</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

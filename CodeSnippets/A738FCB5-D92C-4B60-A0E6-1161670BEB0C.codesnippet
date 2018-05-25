@@ -3,20 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ep=</string>
+	<string>epasy</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>expect(&lt;#test value#&gt;) == &lt;#expected#&gt;
-</string>
+	<string>let expectation = self.expectation(description: "")
+
+    &lt;#async code#&gt;
+        expectation.fulfill()
+        
+waitForExpectations(timeout: 5, handler: nil)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>4EDF2343-C6B1-4909-BB00-600DFA1B3E87</string>
+	<string>A738FCB5-D92C-4B60-A0E6-1161670BEB0C</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Expect</string>
+	<string>Expect async</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
