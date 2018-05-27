@@ -5,9 +5,9 @@
 	<key>Kind</key>
 	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
 	<key>Description</key>
-	<string>This is an example of a custom template</string>
+	<string>View Controller Template</string>
 	<key>Summary</key>
-	<string>MyTemplate</string>
+	<string>View Controller Template</string>
 	<key>SortOrder</key>
 	<string>30</string>
 	<key>AllowedTypes</key>
@@ -26,9 +26,9 @@
 			<key>Required</key>
 			<true/>
 			<key>Name</key>
-			<string>View Name</string>
+			<string>View Controller Name</string>
 			<key>Description</key>
-			<string>The class name for the custom view</string>
+			<string></string>
 			<key>Type</key>
 			<string>text</string>
 			<key>Default</key>

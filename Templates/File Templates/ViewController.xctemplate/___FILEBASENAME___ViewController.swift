@@ -8,21 +8,31 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___: UIView {
+class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupView()
+    var viewModel: ___VARIABLE_productName:identifier___ViewModel
+    
+    init(viewModel: ___VARIABLE_productName:identifier___ViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) { fatalError("nah") }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupView()
+        setupBinding()
+    }
+    
     private func setupView() {
-        translatesAutoresizingMaskIntoConstraints = false
-        
-        addSubview(exampleLabel)
+        view.addSubview(exampleLabel)
         
         // Create auto layout constraints for the views
+    }
+    
+    private func setupBinding() {
+        exampleLabel.text = "Updated text"
     }
     
     // MARK: - UI Elements
