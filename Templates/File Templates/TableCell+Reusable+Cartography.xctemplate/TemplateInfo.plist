@@ -26,9 +26,9 @@
 			<key>Required</key>
 			<true/>
 			<key>Name</key>
-			<string>View Name</string>
+			<string>Cell Name</string>
 			<key>Description</key>
-			<string>The class name for the custom view</string>
+			<string>The class name for the custom table view cell</string>
 			<key>Type</key>
 			<string>text</string>
 			<key>Default</key>
