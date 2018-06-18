@@ -22,7 +22,7 @@ public class ___FILEBASENAMEASIDENTIFIER___: UIView {
 
     public init(_ data: ___FILEBASENAMEASIDENTIFIER___.Data) {
         self.init()
-        setViewData(data)
+        render(data)
     }
 
     override init(frame: CGRect) {
@@ -43,7 +43,7 @@ public class ___FILEBASENAMEASIDENTIFIER___: UIView {
 
     // MARK: -
 
-    public func setViewData(_ data: ___FILEBASENAMEASIDENTIFIER___.Data) {
+    public func render(_ data: ___FILEBASENAMEASIDENTIFIER___.Data) {
         exampleLabel.text = data.foo
     }
 
