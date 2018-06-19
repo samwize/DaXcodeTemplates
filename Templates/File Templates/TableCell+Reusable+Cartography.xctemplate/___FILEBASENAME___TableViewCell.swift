@@ -42,7 +42,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell, Reusable {
 
     // MARK: -
 
-    func setViewData(_ data: ___FILEBASENAMEASIDENTIFIER___.Data) {
+    func render(_ data: ___FILEBASENAMEASIDENTIFIER___.Data) {
         fooLabel.text = data.foo
     }
 
