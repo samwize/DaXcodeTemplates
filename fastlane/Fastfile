@@ -31,10 +31,22 @@ platform :ios do
     )
   end
 
+  # To sync metadata, you must run manually:
+  # fastlane deliver download_metadata
+  # fastlane deliver download_screenshots
+
   desc "Push metadata and screenshots"
-  lane :deliver_meta do
+  lane :deliver_all do
     deliver(
       skip_binary_upload: true
+    )
+  end
+
+  desc "Push metadata, not screenshots"
+  lane :deliver_meta do
+    deliver(
+      skip_binary_upload: true,
+      skip_screenshots: true,
     )
   end
 
