@@ -7,10 +7,9 @@
 //
 
 import UIKit
-import Reusable
 import Cartography
 
-final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell, Reusable {
+final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell {
 
     struct Data {
         var foo: String
@@ -23,7 +22,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell, Reusable {
         setupView()
     }
 
-    required init?(coder aDecoder: NSCoder) { fatalError("nah") }
+    required init?(coder aDecoder: NSCoder) { fatalError("") }
 
     private func setupView() {
         contentView.addSubview(fooLabel)
@@ -31,12 +30,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell, Reusable {
             subview.left == view.left
             subview.right == view.right
             subview.top == view.top
-            subview.bottom == view.bottom
-        }
-
-        // Needed for cell that auto resize it's height
-        constrain(self, contentView) { cell, content in
-            content.edges == cell.edges
+            subview.bottom == view.bottom ~ UILayoutPriority.defaultHigh // Workaround might be needed for autolayout
         }
     }
 

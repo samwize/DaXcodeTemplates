@@ -5,7 +5,7 @@
 	<key>Kind</key>
 	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
 	<key>Description</key>
-	<string>This is an example of a custom template</string>
+	<string>Custom table view cell</string>
 	<key>Summary</key>
 	<string>MyTemplate</string>
 	<key>SortOrder</key>
