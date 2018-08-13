@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>migrate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/// Release in: v&lt;#version#&gt;
+/// Wrote on: &lt;#yyyy-mm-dd#&gt;
+/// &lt;#Describe what is migration for#&gt;
+func migrateForBlah() {
+   migrate(MigrationKey.fixForBlah) {
+        &lt;#migration operation#&gt;
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3313A3BE-9D26-4E34-9CEC-BB97021F32E0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Migration Operation</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
