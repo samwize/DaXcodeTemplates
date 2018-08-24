@@ -8,7 +8,7 @@ platform :ios do
   xcodeproj = "#{project}.xcodeproj"
   workspace = "#{project}.xcworkspace"
   scheme = project
-  remote = "bitbucket"
+  remote = "origin"
 
   desc "Push a new release build to the App Store"
   lane :release do
@@ -18,12 +18,12 @@ platform :ios do
 
     commit_version_bump(
       message: 'Build Version Bump',
-      xcodeproj: '#{xcodeproj}',
+      xcodeproj: xcodeproj,
       force: true
     )
     build_number = Actions.lane_context[Actions::SharedValues::BUILD_NUMBER]
     add_git_tag(tag: "build-#{build_number}")
-    push_to_git_remote(remote: "#{remote}")
+    push_to_git_remote(remote: remote)
 
     deliver(
       skip_metadata: true,
