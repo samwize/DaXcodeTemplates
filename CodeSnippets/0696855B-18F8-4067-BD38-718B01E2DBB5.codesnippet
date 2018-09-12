@@ -3,22 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>swresult</string>
+	<string>swre</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>switch result {
-    case .success(let &lt;#item#&gt;): &lt;#success code#&gt;
-    case .fail(let error): print(error.localizedDescription)
+    case .success(let &lt;#item#&gt;):
+    &lt;#success code#&gt;
+    case .fail(let error):
+    print(error.localizedDescription)
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>240B3780-CF3E-416E-AB25-9849008116E3</string>
+	<string>0696855B-18F8-4067-BD38-718B01E2DBB5</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Result switch success/fail</string>
+	<string>Switch Result</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
