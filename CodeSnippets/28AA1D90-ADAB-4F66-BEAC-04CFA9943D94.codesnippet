@@ -6,7 +6,7 @@
 	<string>guardlet</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>guard let &lt;#variable#&gt; = &lt;#variable#&gt; else { return }</string>
